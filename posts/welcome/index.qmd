@@ -2,8 +2,17 @@
 title: "Welcome To My Blog"
 author: "Tristan O'Malley"
 date: "2025-09-28"
-categories: [news]
 ---
+
+```{r}
+#| label: metadata-block
+#| output: asis
+#| echo: false
+quarto::write_yaml_metadata_block(
+  # We leave 7 days of delay after the starting date to account for event duration
+  categories = "news"
+)
+```
 
 This is the first post in a Quarto blog. Welcome!
 
